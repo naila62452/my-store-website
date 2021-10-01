@@ -1,0 +1,13 @@
+<!-- <h1>Recipe name is {{recipe}}</h1>
+<ul>
+    <li *ngFor = "let ingredient of list">{{ingredient}}</li>
+</ul> -->
+
+<!-- <h1>{{title}}</h1>
+<ul *ngFor = "let list of animal">
+    <li >{{list.id}} - {{list.name}}</li>
+    <li>{{list.description}}</li>
+</ul> -->
+
+<h1>List of animals</h1>
+<app-animal *ngFor="let animal of animalList" [animal]="animal" (liked)= "liked($event)"></app-animal>
